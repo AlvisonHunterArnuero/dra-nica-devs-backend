@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "candidates",
+  "info": {
+    "name": "Candidates"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullname": {
+      "type": "string"
+    },
+    "seniority": {
+      "type": "enumeration",
+      "enum": [
+        "trainee",
+        "junior",
+        "mid",
+        "senior",
+        "leader"
+      ]
+    },
+    "email": {
+      "type": "string"
+    },
+    "hired": {
+      "type": "enumeration",
+      "enum": [
+        "referred",
+        "interviewed",
+        "hired",
+        "rejected"
+      ]
+    },
+    "phone": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female",
+        "other"
+      ]
+    }
+  }
+}
